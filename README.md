@@ -1,16 +1,39 @@
-# Simple Web Scraper
+# WebScraper
 
-This Python script is a basic web scraper that extracts and prints all the hyperlinks (URLs) found on a given webpage. It uses the `requests` and `BeautifulSoup` libraries.
+A simple web scraper built using Python, BeautifulSoup, and Requests library. This tool extracts and displays all the hyperlinks (`<a>` tags) from a given website.
 
-## Prerequisites
+## Features
 
-Before running the script, ensure you have the following Python libraries installed:
+- Takes a website URL as input from the user.
+- Scrapes the website for all anchor tags (`<a>`).
+- Prints out all the links (`href` attributes) found on the page.
 
--   `requests`: For making HTTP requests.
--   `beautifulsoup4`: For parsing HTML content.
+## Requirements
 
-You can install them using pip:
+- Python 3.x
+- BeautifulSoup4
+- requests
 
-```bash
-pip install requests beautifulsoup4
-```
+## Installation
+
+1. Clone this repository or copy the code into a `.py` file.
+2. Install the required packages:
+    ```bash
+    pip install beautifulsoup4 requests
+    ```
+
+## Usage
+
+1. Run the script:
+    ```bash
+    python your_script_name.py
+    ```
+
+2. When prompted, enter the website URL you want to scrape:
+    ```
+    Enter website url: https://example.com
+    ```
+
+3. The program will print out all the links found on that page.
+
+## Example Output
